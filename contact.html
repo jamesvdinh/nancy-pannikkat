@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Copyright Disclaimer: This Source Code is Copyright (c) 2022 Nancy Pannikkat. All Rights Reserved.
+-->
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Nancy Pannikkat</title>
+    <link href="css/general.css" rel="stylesheet" type="text/css" media="all">
+    <!-- <link rel="icon" href="img/icon.ico"> -->
+
+    <meta name="author" content="Nancy Pannikkat">
+    <meta name="copyright" content="This site and its pages are Copyright (c) 2022 Nancy Pannikkat. All Rights Reserved.">
+    <meta name="description" content="The official art gallery showcase of Nancy Pannikkat">
+    <meta name="keywords" content="Nancy Pannikkat, art gallery, buy art online">
+    
+    <!-- JavaScript Refs -->
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script defer src="js/contact.js"></script>
+    <style>
+        body {
+            position: relative;
+            background-color: #f2f1ef;
+            color: #0d1117;
+        }
+    </style>
+    <!--For icons, go here: https://iconsvg.xyz/ or https://icomoon.io/app/#/select-->
+    <!-- Compress Images: https://imageresizer.com/image-compressor -->
+</head>
+<body>
+    <!--Nav-->
+    <div class="nav-wrapper">
+        <nav class="navBar">
+            <div class="nav-left">
+                <a id="nav-logo-a" href="./">
+                    <h1>Nancy Pannikkat</h1>
+                </a>
+            </div>
+            <div id="nav-links-container">
+                <ul id="navList">
+                    <li><a class="navlink" onclick="uncheck('check')" href="./gallery.html">Gallery</a></li>
+                    <li><a class="navlink" onclick="uncheck('check')" href="./about.html">About</a></li>
+                    <li><a class="navlink current" onclick="uncheck('check')" href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <section class="contact">
+            <h2 class="topic">Contact Me</h2>
+            <hr class="line">
+            <!-- Src: https://codepen.io/nikhil8krishnan/pen/gaybLK -->
+                <form action="https://formsubmit.co/cdb6b3b7f0aaee18ef710e25aee428d2" class="contact-form" method="POST">
+                    <div class="form-single-line">
+                        <div class="input-block">
+                        <label for="">Name</label>
+                        <input type="text" name="Name" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-single-line">
+                        <div class="input-block">
+                        <label for="">Email</label>
+                        <input type="email" name="Email" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-multi-line">
+                        <div class="input-block textarea">
+                        <label for="">Drop your message here</label>
+                        <textarea rows="3" name="Message" class="form-control" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-submit-button">
+                        <button type="submit" class="square-button">Send</button>
+                    </div>
+                </form>
+        </section>
+    </main>
+</body>
+</html>
