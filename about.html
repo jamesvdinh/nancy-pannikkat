@@ -18,13 +18,18 @@
     <meta name="keywords" content="Nancy Pannikkat, art gallery, buy art online">
     
     <!-- JavaScript Refs -->
-
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script defer src="js/contact.js"></script>
     <style>
+        @font-face {
+            font-family: "Queensides";
+            src: url("font/Queensides-3z7Ey.ttf") format('truetype');
+        }
         body {
             position: relative;
             background-color: #f2f1ef;
             color: #0d1117;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: "Queensides";
         }
     </style>
     <!--For icons, go here: https://iconsvg.xyz/ or https://icomoon.io/app/#/select-->
@@ -41,9 +46,8 @@
             </div>
             <div id="nav-links-container">
                 <ul id="navList">
-                    <li><a class="navlink" href="./gallery.html" title="gallery">Gallery</a></li>
                     <li><a class="navlink current" href="./about.html" title="about">About</a></li>
-                    <li><a class="navlink" href="./contact.html" title="contact">Contact</a></li>
+                    <li><a class="navlink" href="./buy.html" title="buy">Buy</a></li>
                 </ul>
             </div>
         </nav>
@@ -56,7 +60,35 @@
                 <img src="">
             </div>
             <div class="about-desc">
-                Lorem ipsum
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <section class="contact">
+                    <h2 class="topic">Contact Me</h2>
+                    <hr class="line">
+                    <!-- Src: https://codepen.io/nikhil8krishnan/pen/gaybLK -->
+                        <form action="#" class="contact-form" method="POST">
+                            <div class="form-single-line">
+                                <div class="input-block">
+                                <label for="">Name</label>
+                                <input type="text" name="Name" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-single-line">
+                                <div class="input-block">
+                                <label for="">Email</label>
+                                <input type="email" name="Email" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-multi-line">
+                                <div class="input-block textarea">
+                                <label for="">Drop your message here</label>
+                                <textarea rows="3" name="Message" class="form-control" required></textarea>
+                                </div>
+                            </div>
+                            <div class="form-submit-button">
+                                <button type="submit" class="square-button">Send</button>
+                            </div>
+                        </form>
+                </section>
             </div>
 
         </div>
