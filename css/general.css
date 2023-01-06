@@ -237,7 +237,7 @@ input:-webkit-autofill:active {
   color: black;
 }
 .input-block.focus {
-  filter: brightness(0.9);
+  filter: brightness(1.05);
   transition: 0.5s;
 }
 .input-block.textarea {
