@@ -15,6 +15,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
         keyboard: true,
         isNavigation: true,
         pauseOnFocus: true,
+        speed: 2000,
     } );
     splide.mount();
 });
