@@ -165,6 +165,19 @@ li .splide__pagination__page.is-active {
   background: #2c2c2c;
 }
 
+@media (max-width: 950px) {
+  .slide-content {
+    margin: auto;
+    padding: 10px 5px 20px;
+  }
+  
+  .slide-img {
+    max-width: 800px;
+    width: 100%;
+    height: unset;
+  }
+}
+
 .about-parent {
   display: flex;
   flex-flow: row wrap;

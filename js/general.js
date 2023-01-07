@@ -5,6 +5,12 @@ document.addEventListener( 'DOMContentLoaded', function() {
         focus  : 'center',
         autoWidth: true,
         autoplay: true,
+        mediaQuery: 'max',
+        breakpoints: {
+            950: {
+                destroy: true,
+            },
+        },
     } );
     splide.mount();
 });
