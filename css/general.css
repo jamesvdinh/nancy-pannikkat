@@ -151,7 +151,7 @@ header {
 }
 
 .slide-img {
-  max-height: 700px;
+  height: 75vh;
 }
 
 .slide-desc {
@@ -167,6 +167,7 @@ li .splide__pagination__page.is-active {
 
 .about-parent {
   display: flex;
+  flex-flow: row wrap;
   width: auto;
   height: auto;
   margin: 20px auto;
@@ -177,9 +178,10 @@ li .splide__pagination__page.is-active {
 }
 
 .about-img {
-  width: 400px;
-  height: 400px;
-  background: linear-gradient(rgba(10, 14, 18, 0.2) 50%, rgba(104, 104, 104, 0.37) 60%, rgb(188, 188, 188) 100%);
+  max-width: 400px;
+  min-width: 300px;
+  width: 100%;
+  margin: 10px auto;
 }
 
 .about-desc {
