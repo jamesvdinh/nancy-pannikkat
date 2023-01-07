@@ -11,6 +11,10 @@ document.addEventListener( 'DOMContentLoaded', function() {
                 destroy: true,
             },
         },
+        lazyLoad: true,
+        keyboard: true,
+        isNavigation: true,
+        pauseOnFocus: true,
     } );
     splide.mount();
 });
