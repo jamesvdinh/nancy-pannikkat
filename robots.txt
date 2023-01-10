@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://nancypannikkat.com/sitemap.xml
