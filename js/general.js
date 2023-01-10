@@ -16,6 +16,13 @@ document.addEventListener( 'DOMContentLoaded', function() {
         isNavigation: true,
         pauseOnFocus: true,
         speed: 2000,
+        interval: 7000,
     } );
     splide.mount();
+    window.onload = function() {
+        uncheck('menu-btn');
+    };
+    function uncheck(id) {
+        document.getElementById(id).checked = false;
+    }
 });

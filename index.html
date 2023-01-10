@@ -39,19 +39,19 @@
 <body>
     <!--Nav-->
     <div class="nav-wrapper">
-        <nav class="navBar">
+        <nav class="nav-container">
             <div class="nav-left">
                 <a id="nav-logo-a" href="./">
                     <h1>Nancy Pannikkat</h1>
                 </a>
             </div>
-            <div id="nav-links-container">
-                <ul id="navList">
-                    <li><a class="navlink active" href="./" title="gallery">Gallery</a></li>
-                    <li><a class="navlink" href="./about.html" title="about">About</a></li>
-                    <li><a class="navlink boxed" href="./buy.html" title="buy">Buy</a></li>
-                </ul>
-            </div>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="nav-menu">
+                <li><a class="navlink active" onclick="uncheck('menu-btn')" href="./" title="gallery">Gallery</a></li>
+                <li><a class="navlink" onclick="uncheck('menu-btn')" href="./about.html" title="about">About</a></li>
+                <li><a class="navlink boxed" onclick="uncheck('menu-btn')" href="./buy.html" title="buy">Buy</a></li>
+            </ul>
         </nav>
     </div>
 

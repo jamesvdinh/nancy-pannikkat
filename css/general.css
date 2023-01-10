@@ -23,14 +23,13 @@ body {
   left: 0;
   position: fixed;
   flex-wrap: nowrap;
-  background-color: rgba(229, 229, 229, 0.856);
+  background-color: rgba(229, 229, 229, 0.91);
   box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
   z-index: 100;
 }
 
 nav {
   max-width: 1000px;
-  min-width: 600px;
   margin: 5px auto;
   padding: 17px;
   display: flex;
@@ -49,15 +48,7 @@ nav * {
 .nav-left {
   display: inline-flex;
   align-items: center;
-}
-
-#nav-logo {
-  margin: 5px 0 0;
-}
-
-#nav-logo:hover {
-  transform: scale(1.01);
-  transition: 0.5s;
+  float: inline-start;
 }
 
 #nav-logo-a {
@@ -66,17 +57,16 @@ nav * {
   margin-left: 10px;
 }
 
-nav ul {
+/* nav ul {
   margin-right: 20px;
 }
 
 nav ul li {
-  display: inline-flex;
   line-height: 30px;
   margin: 10px 7px;
   padding: 3px 5px;
   cursor: pointer;
-}
+} */
 
 .navlink {
   color:rgb(160, 160, 160);
@@ -117,8 +107,111 @@ a:hover {
   transform: scale(1);
 }
 
-#nav-links-container {
-  display: inline-flex;
+/* Mobile Nav */
+.nav-container .nav-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  clear: none;
+  float: right;
+  max-height: none;
+}
+
+.nav-container .nav-menu li {
+  display: inline-block;
+  line-height: 30px;
+  margin: 10px 7px;
+  padding: 3px 11px;
+  cursor: pointer;
+}
+
+/* menu icon */
+
+.nav-container .menu-icon {
+  display: none;
+}
+
+.nav-container .menu-icon .navicon {
+  background: rgb(123, 123, 123);
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.nav-container .menu-icon .navicon:before,
+.nav-container .menu-icon .navicon:after {
+  background: rgb(123, 123, 123);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.nav-container .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.nav-container .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.nav-container .menu-btn {
+  display: none;
+}
+
+.nav-container .menu-btn:checked ~ .nav-menu {
+  max-height: 300px;
+  transition: 0.5s;
+}
+
+.nav-container .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.nav-container .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.nav-container .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.nav-container .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.nav-container .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (max-width: 700px) {
+  nav {
+    display: block;
+  }
+  .nav-container .nav-menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+  }
+  .nav-container .nav-menu li {
+    display: block;
+  }
+  .nav-container .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 16px 20px;
+    position: relative;
+    user-select: none;
+    
+  }
 }
 
 .boxed {
@@ -132,7 +225,7 @@ main {
   align-items: center;
   position: relative;
   margin: auto;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 header {
@@ -305,11 +398,11 @@ option {
   color: #2c2c2c;
   font-size: 26px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
   border-radius: 3px;
   transition: all 0.3s ease;
-  height: 60px;
+  height: 50px;
   border: none;
   width: 30%;
 }
