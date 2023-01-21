@@ -15,6 +15,10 @@ body {
   box-sizing: border-box;
 }
 
+img {
+  pointer-events: none;
+}
+
 /* Nav */
 .nav-wrapper {
   height: auto;
@@ -235,6 +239,10 @@ header {
   padding: 30px 0;
 }
 
+/* .splide__track {
+  visibility: hidden;
+} */
+
 .splide__slide {
   padding: 0 10px 30px;
 }
@@ -330,8 +338,8 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: #fff !important;
-    caret-color: #fff;
+    -webkit-text-fill-color: rgb(0, 0, 0) !important;
+    caret-color: rgb(61, 61, 61);
 }
 .contact-form div label {
   color: black;
