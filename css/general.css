@@ -325,6 +325,7 @@ li .splide__pagination__page.is-active {
 
   padding-bottom: 20px;
   margin: 30px auto;
+  font-family: "Queensides";
 }
 
 input:-webkit-autofill,
@@ -363,7 +364,6 @@ input:-webkit-autofill:active {
   height: auto;
   width: 100%;
   resize: vertical;
-  font-family: "Glacial Indifference";
 }
 .input-block label {
   position: absolute;
@@ -399,14 +399,13 @@ option {
   background-color: #dddddd;
   color: #2c2c2c;
   font-size: 26px;
-  text-transform: uppercase;
-  font-weight: 500;
   text-align: center;
   border-radius: 3px;
-  transition: all 0.3s ease;
-  height: 50px;
+  transition: 0.3s ease;
   border: none;
-  width: 30%;
+  padding: 10px 30px;
+  font-weight: bold;
+  font-family: "Queensides";
 }
 .square-button:hover, .square-button:focus {
   filter: brightness(0.9);
