@@ -27,7 +27,7 @@ img {
   left: 0;
   position: fixed;
   flex-wrap: nowrap;
-  background-color: rgba(229, 229, 229, 0.91);
+  background-color: rgba(229, 229, 229, 0.971);
   box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
   z-index: 100;
 }
@@ -310,6 +310,10 @@ li .splide__pagination__page.is-active {
 
 .email-link {
   color: rgb(89, 126, 228);
+}
+
+.emphasis-text {
+  font-size: 26px;
 }
 
 /* Contact */
