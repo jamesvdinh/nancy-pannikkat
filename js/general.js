@@ -1,9 +1,12 @@
 document.addEventListener( 'DOMContentLoaded', function() {
     window.onload = function() {
-        uncheck('menu-btn');
+        check('menu-btn');
     };
     function uncheck(id) {
         document.getElementById(id).checked = false;
+    }
+    function check(id) {
+        document.getElementById(id).checked = true;
     }
 
     //Email Replace
