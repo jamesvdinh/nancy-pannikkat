@@ -18,4 +18,8 @@ document.addEventListener( 'DOMContentLoaded', function() {
         setAttributes(entry, {"href": "mailto:nancypannikkat" + "@" + "gmail.com?subject=Art Purchase Inquiry", "target": "_blank"});
         entry.innerHTML = "nancypannikkat" + "@" + "gmail.com";
     });
+    const emailicon = document.querySelectorAll('.email-replace-icon');
+    emailicon.forEach(entry => {
+        setAttributes(entry, {"href": "mailto:nancypannikkat" + "@" + "gmail.com?subject=Art Purchase Inquiry", "target": "_blank"});
+    });
 });
